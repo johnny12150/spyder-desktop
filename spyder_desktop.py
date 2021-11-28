@@ -6,8 +6,6 @@ automatically open up the URL in the default web browser.
 It also sets up port forwarding for ssh.
 """
 
-# Author: Xiangmin Jiao <xmjiao@gmail.com>
-
 from __future__ import print_function
 
 import sys
@@ -15,10 +13,10 @@ import subprocess
 import time
 import os
 
-owner = "compdatasci"
-proj = os.path.basename(sys.argv[0]).split('_')[0]
-image = owner + '/' + proj + "-desktop"
-tag = ""
+# proj = os.path.basename(sys.argv[0]).split('_')[0]
+proj = os.path.basename(sys.argv[0])
+image = "johnny12150/web-spyder"
+tag = "18.04"
 projdir = "project"
 workdir = "project"
 volume = proj + "_project"
